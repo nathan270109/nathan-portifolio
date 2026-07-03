@@ -1,17 +1,90 @@
+/* ==========================================================================
+   1. VARIÁVEIS E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+:root {
+  --bg-color: #0f172a;       /* Azul escuro profundo (fundo) */
+  --card-bg: #1e293b;        /* Azul ardósia (fundo dos cards) */
+  --primary-color: #38bdf8;   /* Azul claro brilhante (links/destaques) */
+  --accent-color: #818cf8;    /* Roxo/Índigo (detalhes) */
+  --text-main: #f8fafc;       /* Branco/Cinza bem claro (textos principais) */
+  --text-muted: #94a3b8;      /* Cinza fosco (textos secundários) */
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 0 20px;
+}
 
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espaçamento entre as seções */
+}
 
+/* ==========================================================================
+   2. HEADER (CABEÇALHO)
+   ========================================================================== */
+header {
+  max-width: 900px;
+  margin: 40px auto 20px auto;
+  text-align: center;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 20px;
+}
 
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
 
+header .sobre-mim {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
+/* ==========================================================================
+   3. SEÇÃO HERO (SOBRE MIM)
+   ========================================================================== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(135deg, var(--card-bg), #151f32);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
+}
 
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Não deixa a foto distorcer */
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
 
-
-
-
-
-.sobre-mim {
-    font-size: var(--textopequeno);
-    color: var(--corsecundaria);
+.hero h2 {
+  font-size: 1.8rem;
 }
