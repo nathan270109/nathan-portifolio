@@ -30,7 +30,7 @@ html {
   position: fixed;
   left: 0;
   top: 0;
-  font-size: 32px;
+  font-size: 24px;
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
@@ -85,19 +85,34 @@ html {
   }
 }
 
-.planet {
+.planet1 {
   position: absolute;
   right: 10%;
   bottom: 12%;
   width: 180px;
   aspect-ratio: 1;
   border-radius: 50%;
-  z-index: 9999;
+  z-index: 999;
   background:
-    radial-gradient(circle at 35% 30%, #f7c06a, #7b2cff 45%, #1b0638 75%);
-  box-shadow: 0 0 60px rgba(123, 44, 255, 0.6);
+    radial-gradient(circle at 35% 30%, #f7c06a, #838383 45%, #272727 75%);
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.6);
   animation: float 6s infinite ease-in-out;
 }
+
+.planet2 {
+  position: absolute;
+  left: 7%;
+top: 12%;
+  width: 150px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  z-index: 999;
+  background:
+    radial-gradient(circle at 35% 30%, #f7c06a, #7381ff 45%, #0400ff 75%);
+  box-shadow: 0 0 60px rgba(72, 110, 192, 0.6);
+  animation: float 6s infinite ease-in-out;
+}
+
 
 @keyframes float {
   50% {
