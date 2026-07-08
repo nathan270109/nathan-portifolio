@@ -327,6 +327,7 @@ footer {
     flex-direction: column;
     gap: 20px;
     width: 95%;
+    margin: auto;
   }
 
   .sobre-campo {
