@@ -101,14 +101,14 @@ html {
 
 .planet2 {
   position: absolute;
-  left: 7%;
-top: 12%;
+  left: 6%;
+  top: 12%;
   width: 150px;
   aspect-ratio: 1;
   border-radius: 50%;
   z-index: 999;
   background:
-    radial-gradient(circle at 35% 30%, #f7c06a, #7381ff 45%, #0400ff 75%);
+    radial-gradient(circle at 35% 30%, #f7c06a, #3b9c4b 45%, #1a5263 75%);
   box-shadow: 0 0 60px rgba(72, 110, 192, 0.6);
   animation: float 6s infinite ease-in-out;
 }
@@ -176,6 +176,7 @@ header .sobre-mim {
   align-items: center;
   gap: 20px;
   z-index: 100;
+  font-size: 0.8em;
   background: linear-gradient(135deg, var(--card-bg), #151f32);
   padding: 30px;
   border-radius: var(--border-radius);
@@ -254,8 +255,9 @@ footer {
 
 .sobre-campo {
   background: linear-gradient(135deg, var(--card-bg), #7a673e);
+  font-size: 0.8em;
   padding: 30px;
-  width: 49%;
+  width: 48%;
   z-index: 100;
   border-radius: var(--border-radius);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
