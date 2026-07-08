@@ -102,7 +102,7 @@ html {
 .planet2 {
   position: absolute;
   left: 6%;
-  top: 12%;
+  top: 37%;
   width: 100px;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -267,4 +267,96 @@ footer {
 
 .sobre-campo:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+
+  #cursor-emoji {
+    display: none;
+  }
+
+  .conteudo {
+    padding: 0 16px;
+  }
+
+  header {
+    margin: 30px auto 20px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  header .sobre-mim {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+
+  main {
+    margin: 30px auto;
+    gap: 25px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+    width: 95%;
+    margin: auto;
+  }
+
+  .hero img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p,
+  .sobre-campo p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .sobre {
+    flex-direction: column;
+    gap: 20px;
+    width: 95%;
+  }
+
+  .sobre-campo {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .planet1 {
+    width: 100px;
+    right: -35px;
+    bottom: 10%;
+  }
+
+  .planet2 {
+    width: 90px;
+    left: -30px;
+    top: 8%;
+  }
+
+  footer {
+    margin-top: 50px;
+    padding: 35px 20px;
+  }
+
+  .footer-grid {
+    gap: 25px;
+  }
+
+  .footer-col p,
+  .footer-col a {
+    width: auto;
+  }
 }
